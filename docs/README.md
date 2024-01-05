@@ -7,9 +7,9 @@ footer: "ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]"
 ---
 
 
-**Виконав(-ла):** 
+**Виконала:** 
 
-*студент 2-го курсу, групи ІМ-23*<span padding-right:5em></span> **Брюхов Арсеній, @qrqwqeqt**
+*студентка 2-го курсу, групи ІМ-23*<span padding-right:5em></span> **Косенко Кароліна, @kaarroo_lina**
 
 
 **Керівник**
