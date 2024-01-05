@@ -4,17 +4,20 @@
 <img src="start_services.png" alt="">
 
 ## Створення файла (**Post** запит)
-<img src="./images/post.jpg" alt="">
+<img src="create.png" alt="">
 
 ## Отримання даних (**Get** запит)
-<img src="./images/get.jpg" alt="">
+<img src="get.png" alt="">
 
 ## Оновлення даних (**Put** запит)
-<img src="./images/put.jpg" alt="">
+<img src="put.png" alt="">
+
+## Отримання оновлених даних (**Get** запит)
+<img src="get2.png" alt="">
 
 ## Видалення файлу (**Delete** запит)
-<img src="./images/delete.jpg" alt="">
+<img src="delete.png" alt="">
 
 ## Видалення неіснуючого файлу (**Delete** запит Error)
-<img src="./images/del_err.jpg" alt="">
+<img src="get3.png" alt="">
 
