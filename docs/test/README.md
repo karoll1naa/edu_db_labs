@@ -1,6 +1,7 @@
 # Тестування працездатності системи
 
 ## Запуск сервера 
+<img src="start_services.png" alt="">
 
 ## Створення файла (**Post** запит)
 <img src="./images/post.jpg" alt="">
