@@ -245,7 +245,7 @@ exports.getAllFiles = (req, res, next) => {
     conn.query("SELECT * FROM file", function (err, data, fields) {
         if (err) return next(new AppError(err));
         res.status(200).json({
-            status: "success!",
+            status: "success",
             length: data?.length,
             data: data,
         });
@@ -269,7 +269,7 @@ exports.createFile = (req, res, next) => {
         function (err, data, fields) {
             if (err) return next(new AppError(err, 500));
             res.status(201).json({
-                status: "success!",
+                status: "success",
                 message: "file added!",
             });
         }
@@ -286,7 +286,7 @@ exports.getFileById = (req, res, next) => {
         function (err, data, fields) {
             if (err) return next(new AppError(err, 500));
             res.status(200).json({
-                status: "success!",
+                status: "success",
                 length: data?.length,
                 data: data,
             });
@@ -310,7 +310,7 @@ exports.updateFile = (req, res, next) => {
         function (err, data, fields) {
             if (err) return next(new AppError(err, 500));
             res.status(201).json({
-                status: "success!",
+                status: "success",
                 message: "file info updated!",
             });
         }
@@ -327,7 +327,7 @@ exports.deleteFile = (req, res, next) => {
         function (err, fields) {
             if (err) return next(new AppError(err, 500));
             res.status(201).json({
-                status: "success!",
+                status: "success",
                 message: "file deleted!",
             });
         }
