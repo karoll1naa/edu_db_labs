@@ -211,8 +211,8 @@ const mysql = require("mysql2");
 const conn = mysql.createConnection({
     host: "localhost",
     user: "root",
-    password: "10152025",
-    database: "lab4",
+    password: "123456789",
+    database: "lab6",
 });
 
 conn.connect();
@@ -238,14 +238,14 @@ module.exports = router;
 
 #### Контроллери
 ```js
-const AppError = require("../utils/appError");
-const conn = require("../services/db");
+const AppError = require("../utils/appError.js");
+const conn = require("../services/db.js");
 
 exports.getAllFiles = (req, res, next) => {
     conn.query("SELECT * FROM file", function (err, data, fields) {
         if (err) return next(new AppError(err));
         res.status(200).json({
-            status: "success",
+            status: "success!",
             length: data?.length,
             data: data,
         });
@@ -269,7 +269,7 @@ exports.createFile = (req, res, next) => {
         function (err, data, fields) {
             if (err) return next(new AppError(err, 500));
             res.status(201).json({
-                status: "success",
+                status: "success!",
                 message: "file added!",
             });
         }
@@ -286,7 +286,7 @@ exports.getFileById = (req, res, next) => {
         function (err, data, fields) {
             if (err) return next(new AppError(err, 500));
             res.status(200).json({
-                status: "success",
+                status: "success!",
                 length: data?.length,
                 data: data,
             });
@@ -306,13 +306,11 @@ exports.updateFile = (req, res, next) => {
             req.body.file_upload,
             req.body.file_format,
             req.params.id,
-
-
         ],
         function (err, data, fields) {
             if (err) return next(new AppError(err, 500));
             res.status(201).json({
-                status: "success",
+                status: "success!",
                 message: "file info updated!",
             });
         }
@@ -329,7 +327,7 @@ exports.deleteFile = (req, res, next) => {
         function (err, fields) {
             if (err) return next(new AppError(err, 500));
             res.status(201).json({
-                status: "success",
+                status: "success!",
                 message: "file deleted!",
             });
         }
